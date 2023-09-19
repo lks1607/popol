@@ -109,15 +109,12 @@
                 justify-content: center;
                 align-items: center;
                 color: #fff;
-                line-height: 3rem;
+                line-height: 2rem;
                 font-size: 2rem;
+                text-align: center;
                 letter-spacing: 0.1rem;
-
-                p{
-                    font-size: 1.5rem;
-                }
-            }
         }
+    }
 
 // project ---------
         #Project{
@@ -227,12 +224,12 @@
                 }
 
             }
-        }
+        
 // 그래픽 --------------
 // 어바웃 ME --------------
 }
 
-
+}
 
 
 
@@ -268,12 +265,17 @@
     background-color: inherit;
     height: 100vh; 
     margin: auto;
-    padding-top: 80px;
+    padding-top: 100px;
     // margin-bottom: 10px;
 }
 
 section{
     margin: 30px auto;
+    color: #fff;
+    h2{
+        color: #fff;
+        font-size: 30px;
+    }
 }
 
 section:last-child{
@@ -283,7 +285,7 @@ section:last-child{
 main{
     position: relative;
     // top: 100px;
-    background-color: #d0d0d0;
+    background-color: #000;
 }
 
 header{
@@ -317,18 +319,18 @@ header{
             li{
                 &:hover { 
                     a{
-                        background-color: #000;
+                        background-color: #d9d9d9;
                         border-radius: 5px;
                     }
                 }
     
                 &.on a{
-                    color: #fff;
+                    color: #fff ;
                 }
     
                 a{
                     font-size: 20px;
-                    color: #fff;
+                    color: #808080 ;
                     font-weight: bold;
                     padding: 5px;
                     transition: all 0.25s ease-in-out 0s;
@@ -357,16 +359,14 @@ header{
             position: relative;
             color: #fff;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-size: 8rem;
+            font-weight: bold;
+            text-align: center;
             letter-spacing: 5px;
-            h1{
-                font-size: 8.75rem;
-            }
-            p{
-                font-size: 2.25rem;
-            }
+            padding-top: 0;
+            
         }
     }
     
@@ -452,4 +452,21 @@ header{
 }
 // 그래픽 --------------
 // 어바웃 ME --------------
+#About{
+    .inner{
+        // background-color: #fff;
+        .contents{
+            h2{
+            color: #000;
+            margin-left: 50px;
+            padding-top: 50px;
+            }
+            color: #000;
+            background-color: #fff;
+            width: 100%;
+            height: 90%;
+        }
+    }
 }
+}
+

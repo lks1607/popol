@@ -28,7 +28,7 @@
                     <li><a href="#Project">Project</a></li>
                     <li><a href="#Work">Work</a></li>
                     <!-- <li><a href="#graphices">Graphices</a></li> -->
-                    <li><a href="#Aboute">Aboute Me</a></li>
+                    <li><a href="#About">Aboute Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,11 +36,11 @@
 
     <main>
         <section id="home">
-            <div class="inner gap2">
-                <h1>FRONT-END DEV.</h1>
-                <p>PORTFOLIO</p>
+            <div class="inner gap2 text_box">
+                <span class="text"></span>
             </div>
         </section>
+        
         <section id="Project">
             <div class="inner">
                 <h2>Project</h2>
@@ -104,7 +104,7 @@
                                 <img src="./images/work/map.svg" alt="반응형 지도 사진">
                             </a>
                             <h3>반응형 지도</h3>
-                            <p>모바일 사이즈 & pc사이즈 지도</p>
+                            <p>모바일 & pc사이즈 지도</p>
                         </li>
                         <li>
                             <a href="https://lks1607.github.io/hanwha/" target="_blank">
@@ -164,9 +164,54 @@
                 <h2>Graphices</h2>
             </div>
         </section> -->
-        <section id="Aboute">
+        <section id="About">
             <div class="inner">
-                <h2>Aboute Me</h2>
+                <div class="contents">
+                    <h2>Aboute Me</h2>
+                    <div class="lks">
+                        <div class="profile">
+                            <img src="#" alt="프로필사진">
+                            <h2 class="h2">이경섭</h2>
+                            <div class="introduce"></div>
+                            <div class="privacy"></div>
+                        </div>
+                        <div class="lks_info">
+                            <h2>Skill</h2>
+                            <div class="skills">
+                                <ul>
+                                    <li>
+                                        <div class="skill_name">
+                                            <span>Language</span>
+                                        </div>
+                                        <div class="skill">
+                                            <span>JavaScript</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="skill_name">
+                                            <span>MarkUp</span>
+                                        </div>
+                                        <div class="skill">
+                                            <span>HTML</span>
+                                            <span>css</span>
+                                            <span>scss</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="skill_name">
+                                            <span>Tool</span>
+                                        </div>
+                                        <div class="skill">
+                                            <span>Git</span>
+                                            <span>Github</span>
+                                            <span>Figma</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -203,6 +248,22 @@
 
             $('html').animate({ scrollTop: sectionTop }, 500);
         })
+
+        // 타이핑 텍스트
+
+        const content = "FRONT-END DEV, \n PORTFOLIO.";
+        const text = document.querySelector(".text");
+        const blink = document.querySelector(".blink");
+        let i = 0;
+
+        function typing(){
+            if (i < content.length) {
+            let txt = content.charAt(i);
+            text.innerHTML += txt=== "\n" ? "<br/>": txt;;
+            i++;
+            } 
+            }
+            setInterval(typing, 200);
     </script>
 
 </body>

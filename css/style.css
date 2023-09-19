@@ -86,12 +86,10 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    line-height: 3rem;
+    line-height: 2rem;
     font-size: 2rem;
+    text-align: center;
     letter-spacing: 0.1rem;
-  }
-  #home .inner p {
-    font-size: 1.5rem;
   }
   #Project .inner h2 {
     margin-bottom: 50px;
@@ -220,17 +218,22 @@
     background-color: inherit;
     height: 100vh;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 100px;
   }
   section {
     margin: 30px auto;
+    color: #fff;
+  }
+  section h2 {
+    color: #fff;
+    font-size: 30px;
   }
   section:last-child {
     margin-bottom: 0;
   }
   main {
     position: relative;
-    background-color: #d0d0d0;
+    background-color: #000;
   }
   header {
     position: fixed;
@@ -256,7 +259,7 @@
     display: none;
   }
   header .header-inner nav ul.flex li:hover a {
-    background-color: #000;
+    background-color: #d9d9d9;
     border-radius: 5px;
   }
   header .header-inner nav ul.flex li.on a {
@@ -264,7 +267,7 @@
   }
   header .header-inner nav ul.flex li a {
     font-size: 20px;
-    color: #fff;
+    color: #808080;
     font-weight: bold;
     padding: 5px;
     transition: all 0.25s ease-in-out 0s;
@@ -280,16 +283,13 @@
     position: relative;
     color: #fff;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
     letter-spacing: 5px;
-  }
-  #home .inner h1 {
-    font-size: 8.75rem;
-  }
-  #home .inner p {
-    font-size: 2.25rem;
+    padding-top: 0;
   }
   #Project {
     padding: 20px 0;
@@ -360,5 +360,16 @@
   }
   #Work .inner .work-list ul li img:hover {
     transform: scale(1.1);
+  }
+  #About .inner .contents {
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    height: 90%;
+  }
+  #About .inner .contents h2 {
+    color: #000;
+    margin-left: 50px;
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
