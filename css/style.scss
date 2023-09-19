@@ -1,0 +1,455 @@
+@import './reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Inter:wght@400;500;900&family=Noto+Sans+KR:wght@300;400;500&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+// 공통속성 -----------
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media  screen and (max-width:759px) {
+    section {
+        // padding-top: 100px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 10px;
+
+        .inner{
+            width: 90%;
+            height: 80%;
+            margin: auto;
+            color: #fff;
+        }
+    }
+    
+    // header
+    
+    header{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        // border-bottom: 1px solid #aaa;
+        .header-inner{
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            h1{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+            }
+    
+            nav{
+                width: 100%;
+                height: 50vh;
+                // background-color: #ed1;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                left: 110%;
+                transition: .35s;
+                background-color: rgba(0,0,0,0.7);
+                &.on{
+                    left: 0;
+                }
+                li{
+                    a{  
+                        color: #fff;
+                        font-size: 1.5rem;
+                        display: block;
+                        padding: 20px;
+                    }
+                }
+                }
+            }
+        }
+        
+        .menu-btn{
+            
+            font-size: 25px;
+            // position: absolute;
+            // top:20px;
+            // right: 0;
+            .btn{
+                display: none;
+
+                &.on{
+                    display:block;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+        }
+    
+// home ================
+        #home{
+            background: url(../images/img.jpg);
+            background-position: center;
+            background-size: cover;
+
+            .inner{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                line-height: 3rem;
+                font-size: 2rem;
+                letter-spacing: 0.1rem;
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+// project ---------
+        #Project{
+            .inner{
+                h2{
+                    margin-bottom: 50px;
+                }
+                .project-list{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                .project{
+                    width: 100%;
+                    height: 30%;
+                    margin: 50px 0;
+                    ul{ 
+                        width: 100%;
+                        height: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        li{
+                            height: 100%;
+                        }
+
+                        li:first-child{
+                            width: 50%;
+                            height: 100%;
+                        }
+
+                        li:last-child{
+                            width: 40%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                        }
+
+                        li a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        li img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+
+                        h3{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+// 코딩 --------------
+        #Work{
+            height: inherit;
+            padding-top: 100px;
+            .inner{
+                h2{
+                    margin-bottom: 50px;
+                }
+
+                .work-list ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    li{
+                        width: 40%;
+                        height: 100%;
+                        padding: 20px 0;
+                        h3{
+                            padding: 20px 0;
+                        }
+                        p{
+                            font-size: 12px;
+                            color: #d9d9d9;
+                        }
+                        a{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            img{
+                                border-radius: 10px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: .8s;
+                            }
+
+                            img:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+// 그래픽 --------------
+// 어바웃 ME --------------
+}
+
+
+
+
+
+
+
+
+
+// Pc =======================
+
+@media screen and (min-width:760px){
+
+.flex{
+    display: flex;
+}
+
+
+.align-c{
+    align-items: center;
+}
+
+.space-b{justify-content: space-between;}
+
+.ptb1{padding: 1rem 0;}
+.plr1{padding: 0 1rem;}
+.ptb2{padding: 2rem 0;}
+.plr2{padding: 0 2rem;}
+
+.gap1{gap:1rem;}
+.gap2{gap:2rem;}
+
+.inner{
+    max-width: 90%;
+    background-color: inherit;
+    height: 100vh; 
+    margin: auto;
+    padding-top: 80px;
+    // margin-bottom: 10px;
+}
+
+section{
+    margin: 30px auto;
+}
+
+section:last-child{
+    margin-bottom: 0;
+}
+
+main{
+    position: relative;
+    // top: 100px;
+    background-color: #d0d0d0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    // background-color: #fff;
+    // border-bottom: 1px solid #bbb;
+    z-index: 999;
+
+    .header-inner{
+        min-width: 90%;
+        margin: auto;
+        height: 100px;
+        h1{
+            width: 10%;
+            img{
+                display: block;
+                width: 80%;
+                height: 80%;
+                margin: 0 auto;
+            }
+        }
+
+       .menu-btn{
+        display: none;
+       }
+
+        nav{
+            ul.flex{
+            li{
+                &:hover { 
+                    a{
+                        background-color: #000;
+                        border-radius: 5px;
+                    }
+                }
+    
+                &.on a{
+                    color: #fff;
+                }
+    
+                a{
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: bold;
+                    padding: 5px;
+                    transition: all 0.25s ease-in-out 0s;
+                    
+                }
+            }
+        }
+    }
+    
+    }
+
+
+}
+
+
+
+// home ----------
+    #home{
+        margin: 0 auto;
+        background: url("../images/img.jpg");
+        background-position: center;
+        background-size: cover;
+
+        .inner{
+            background-color: transparent;
+            position: relative;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 5px;
+            h1{
+                font-size: 8.75rem;
+            }
+            p{
+                font-size: 2.25rem;
+            }
+        }
+    }
+    
+// project ---------
+    #Project{
+        padding: 20px 0;
+        .inner{
+            height: inherit;
+        }
+        .project-list{
+            width: 80%;
+            padding: 50px 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .project ul{
+                line-height: 3em;
+                display: flex;
+                li{
+                    & :first-child{
+                        margin-right: 15px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 20px;
+                            transition: .3s;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                        
+                    }
+                    
+                    & :last-child{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+// 코딩 --------------
+#Work{
+    .inner{
+        .work-list{
+            width: 80%;
+            padding-top: 50px;
+            margin: 0 auto;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                li{
+                    margin: 20px 0;
+                    width: 20%;
+                    line-height: 2em;
+                    h3{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    img{
+                        border-radius: 20px;
+                        transition: .3s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 그래픽 --------------
+// 어바웃 ME --------------
+}

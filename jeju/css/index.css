@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    width: 480px;
+    margin: 80px auto;
+}
+
+.wrap h1{
+    margin: 20px 0;
+    line-height: 50px;  
+}
+
+.wrap p{
+    padding: 16px 24px;
+    background-color: #f2f1f1;
+    color: #555555;
+    display: block;
+    line-height: 24px;
+}
+
+.menu{
+    margin: 20px 0;
+}
+
+.wrap ul li{
+    padding: 0.5rem;
+}
+
+.menu li a{
+    display: inline-block;
+    font-size: 20px;
+    color: inherit;
+}
+
+.menu li a:hover {
+    color: #f56513;
+    font-weight: bold;
+}
+
+.menu li a.on{
+    color: #f56513;
+    font-weight: bold;
+}
+
+
+.map{
+    width: 100%;
+}
+
+h2{
+    margin: 20px 0;
+}
+
+h3{
+    margin: 20px 0;
+}

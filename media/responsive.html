@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive Web</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: red;
+        }
+
+        li {
+            padding: 10px;
+            background-color: #fdd;
+            border: 1px solid #ccc;
+            /* width: 33.333%; */
+        }
+
+
+
+        @media screen and (min-width:768px) {
+            body {
+                background-color: skyblue;
+
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            li {
+                padding: 10px;
+                background-color: #fdd;
+                border: 1px solid #ccc;
+                width: 33.333%;
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            body {
+                background-color: lightgreen;
+
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            li {
+                padding: 10px;
+                background-color: #fdd;
+                border: 1px solid #ccc;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">List1</a></li>
+        <li><a href="#">List2</a></li>
+        <li><a href="#">List3</a></li>
+        <li><a href="#">List4</a></li>
+        <li><a href="#">List5</a></li>
+        <li><a href="#">List6</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+@import './reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Inter:wght@400;500;900&family=Noto+Sans+KR:wght@300;400;500&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@media screen and (max-width: 759px) {
+  section {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 10px;
+  }
+  section .inner {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    color: #fff;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+  }
+  header .header-inner {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header-inner h1 {
+    width: 20%;
+  }
+  header .header-inner h1 img {
+    width: 100%;
+  }
+  header .header-inner nav {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 110%;
+    transition: 0.35s;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  header .header-inner nav.on {
+    left: 0;
+  }
+  header .header-inner nav li a {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    padding: 20px;
+  }
+  .menu-btn {
+    font-size: 25px;
+  }
+  .menu-btn .btn {
+    display: none;
+  }
+  .menu-btn .btn.on {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .menu-btn .btn i {
+    color: #fff;
+    font-size: 30px;
+  }
+  #home {
+    background: url(../images/img.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #home .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  #home .inner p {
+    font-size: 1.5rem;
+  }
+  #Project .inner h2 {
+    margin-bottom: 50px;
+  }
+  #Project .inner .project-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #Project .inner .project {
+    width: 100%;
+    height: 30%;
+    margin: 50px 0;
+  }
+  #Project .inner .project ul {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Project .inner .project ul li {
+    height: 100%;
+  }
+  #Project .inner .project ul li:first-child {
+    width: 50%;
+    height: 100%;
+  }
+  #Project .inner .project ul li:last-child {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #Project .inner .project ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #Project .inner .project ul li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  #Project .inner .project ul h3 {
+    margin-bottom: 10px;
+  }
+  #Work {
+    height: inherit;
+    padding-top: 100px;
+  }
+  #Work .inner h2 {
+    margin-bottom: 50px;
+  }
+  #Work .inner .work-list ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #Work .inner .work-list ul li {
+    width: 40%;
+    height: 100%;
+    padding: 20px 0;
+  }
+  #Work .inner .work-list ul li h3 {
+    padding: 20px 0;
+  }
+  #Work .inner .work-list ul li p {
+    font-size: 12px;
+    color: #d9d9d9;
+  }
+  #Work .inner .work-list ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  #Work .inner .work-list ul li a img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.8s;
+  }
+  #Work .inner .work-list ul li a img:hover {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 760px) {
+  .flex {
+    display: flex;
+  }
+  .align-c {
+    align-items: center;
+  }
+  .space-b {
+    justify-content: space-between;
+  }
+  .ptb1 {
+    padding: 1rem 0;
+  }
+  .plr1 {
+    padding: 0 1rem;
+  }
+  .ptb2 {
+    padding: 2rem 0;
+  }
+  .plr2 {
+    padding: 0 2rem;
+  }
+  .gap1 {
+    gap: 1rem;
+  }
+  .gap2 {
+    gap: 2rem;
+  }
+  .inner {
+    max-width: 90%;
+    background-color: inherit;
+    height: 100vh;
+    margin: auto;
+    padding-top: 80px;
+  }
+  section {
+    margin: 30px auto;
+  }
+  section:last-child {
+    margin-bottom: 0;
+  }
+  main {
+    position: relative;
+    background-color: #d0d0d0;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+  }
+  header .header-inner {
+    min-width: 90%;
+    margin: auto;
+    height: 100px;
+  }
+  header .header-inner h1 {
+    width: 10%;
+  }
+  header .header-inner h1 img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  header .header-inner .menu-btn {
+    display: none;
+  }
+  header .header-inner nav ul.flex li:hover a {
+    background-color: #000;
+    border-radius: 5px;
+  }
+  header .header-inner nav ul.flex li.on a {
+    color: #fff;
+  }
+  header .header-inner nav ul.flex li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    transition: all 0.25s ease-in-out 0s;
+  }
+  #home {
+    margin: 0 auto;
+    background: url("../images/img.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  #home .inner {
+    background-color: transparent;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+  }
+  #home .inner h1 {
+    font-size: 8.75rem;
+  }
+  #home .inner p {
+    font-size: 2.25rem;
+  }
+  #Project {
+    padding: 20px 0;
+  }
+  #Project .inner {
+    height: inherit;
+  }
+  #Project .project-list {
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Project .project-list .project ul {
+    line-height: 3em;
+    display: flex;
+  }
+  #Project .project-list .project ul li :first-child {
+    margin-right: 15px;
+  }
+  #Project .project-list .project ul li :first-child img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  #Project .project-list .project ul li :first-child img:hover {
+    transform: scale(1.1);
+  }
+  #Project .project-list .project ul li :last-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #Project .project-list .project ul li h3 {
+    font-size: 30px;
+  }
+  #Project .project-list .project ul li p {
+    font-size: 18px;
+  }
+  #Work .inner .work-list {
+    width: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  #Work .inner .work-list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #Work .inner .work-list ul li {
+    margin: 20px 0;
+    width: 20%;
+    line-height: 2em;
+  }
+  #Work .inner .work-list ul li h3 {
+    font-size: 24px;
+  }
+  #Work .inner .work-list ul li p {
+    font-size: 20px;
+  }
+  #Work .inner .work-list ul li img {
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  #Work .inner .work-list ul li img:hover {
+    transform: scale(1.1);
+  }
+}/*# sourceMappingURL=style.css.map */

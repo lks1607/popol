@@ -1,0 +1,17 @@
+.avata{
+    width: 150px;
+    height: 270px;
+    overflow: hidden;
+}
+.animate-img{
+    width: -150px;
+    height: 270px;
+    background-image: url(../images/C_8.png);
+    animation: avataAni 1s steps(15) infinite;
+}
+
+@keyframes avataAni{
+    100%{
+        background-position: -2250px 0;
+    }
+}
