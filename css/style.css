@@ -362,7 +362,6 @@
     transform: scale(1.1);
   }
   #About .inner .contents {
-    position: relative;
     color: #000;
     background-color: #fff;
     width: 100%;
@@ -377,13 +376,15 @@
     width: 50%;
     height: 50%;
     margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 50px;
   }
   #About .inner .contents .lks h2 {
     margin: 0;
+  }
+  #About .inner .contents .lks img {
+    display: block;
+    width: 180px;
+    border-radius: 50%;
   }
   #About .inner .contents .lks .me {
     display: flex;
